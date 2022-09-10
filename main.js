@@ -196,7 +196,8 @@ dropList.forEach((list, index) => {
 })
 
 //on btn click
-exchangeBtn.addEventListener("click", () => {
+exchangeBtn.addEventListener("click", (e) => {
+    e.preventDefault();
     let amountVal = amount.value
     if (amountVal === "" || amountVal === "0") {
         amount.value = "1"
