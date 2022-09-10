@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'poppins', sans-serif;
+    background-color: #675AFE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.wrapper {
+    width: 370px;
+    background-color: white;
+    border-radius: 6px;
+    margin: 0 10px;
+}
+
+.wrapper header {
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    color: #5372f0;
+}
+
+form {
+    padding: 20px 20px 30px;
+}
+
+form :where(input, select, button) {
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+form .amount p {
+    color: #5372f0;
+    font-weight: 500;
+}
+
+form .amount input {
+    height: 40px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    border-radius: 4px;
+    margin-top: 5px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+form .amount input:focus {
+    border-color: #5372f0;
+}
+
+.drop-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.drop-list .select-box {
+    width: 115px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    gap: 2px;
+    border-radius: 4px;
+}
+
+.drop-list p {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+
+.drop-list .select-box img {
+    max-width: 22px;
+}
+
+.drop-list .select-box select{
+    font-size: 15px;
+    height: 100%;
+    cursor: pointer;
+}
+.drop-list .select-box select::-webkit-scrollbar{
+    width: 6px;
+}
+.drop-list .select-box select::-webkit-scrollbar-thumb{
+    background-color: #999;
+    border-radius: 4px;
+    border-right: 2px solid #fff;
+}
+.drop-list .select-box select::-webkit-scrollbar-track{
+    background-color: #fff;
+}
+
+.drop-list .exchange {
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 22px;
+    transition: 0.3s;
+}
+.drop-list .exchange:hover{
+    color: #5372f0;
+}
+
+.exchange-rate {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+.exchange-rate.active{
+    text-align: center;
+    background-color: #675afe;
+    color: white;
+    padding: 10px 0;
+    border-radius: 4px;
+}
+
+.get-exchange {
+    background-color: transparent;
+    color: #5372f0;
+    border: 2px solid #5372f0;
+    padding: 15px 0;
+    border-radius: 4px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.get-exchange:hover{
+    background-color: #5372f0;
+    color: white;
+}
